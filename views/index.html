@@ -12,6 +12,7 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
  <title>Tate Seeman - Class of 2026</title>
  </head>
  <body>
+  <div id="navbar-container"></div>
  <header class="container-fluid bg-primary text-white p-5">
  	<h1>Tate Seeman</h1></header>
  <p>This is my Villanova homepage that I have created for my CSC2053 course. I am currently a Senior who plays on the Villanova Men's Lacrosse Team. I was born and raised outside of Boston, Massachusetts where I have three sisters. I have a cat, but I prefer my three dogs: a Greater Swiss Mountain Dog named Clementine, and two labradoodles named Maple and Ollie. I am a huge Boston sports fan, especially the Celtics and Red Sox. I also enjoy golf, lacrosse, and football (soccer).</p>
@@ -20,10 +21,16 @@ T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
  <a href="https://www1.villanova.edu/university/liberal-arts-sciences/programs/computing-sciences.html">Link to Villanova Computing Sciences Department </a>
 
  <main class="container mt-4">
+  <div id="photo-container">
  	<img
  	src="C:\Users\knowj\CSC2053 HW1\resources\img\IMG_3823.PNG"
- 	class="img-fluid rounded border border-3 border-dark" width="220">
+ 	class="img-fluid rounded border border-3 border-dark" 
+  width="220"
+  />
+  </div>
+  <button id="toggle-photo-btn" class="btn btn-secondary mt-3">Hide Photo</button>
  </main>
+
 
 
  <script
@@ -33,26 +40,21 @@ C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
  crossorigin="anonymous"
  ></script>
 
-<nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Villanova Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarBasic">
-      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Sports.html">Sports</a>
-        </li>
-       
-      </ul>
-    
-    </div>
-  </div>
-</nav>
+
+<script src="C:\Users\knowj\CSC2053 HW1\resources\js\script.js"></script>
+
+<script src="C:\Users\knowj\CSC2053 HW1\resources\js\navbar.js"></script>
+<script>
+  loadNavbar();
+</script>
+
+<section class="container mt-5">
+  <h3>My Favorite Artists</h3>
+  <p>Click the button below to add musicians to the page!</p>
+  <button id="add-artist" class="btn btn-info">Add artists</button>
+  <div id="artists-container"></div>
+</section>
+
 
  </body>
 </html>
