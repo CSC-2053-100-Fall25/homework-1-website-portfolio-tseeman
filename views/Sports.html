@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Sports + Athletes</title>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
 
- <title>Sports + Athletes</title>
- </head>
- <body>
- <h1>Tate's Favorite Sports & Athletes</h1>
- <p>My four favorite athletes are Dominik Szoboszlai, Jayson Tatum, Wilyer Abreu, and Christian Gonzalez. </p>
- 
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      padding-top: 60px;
-      background-color: #f8f9fa;
-	}
-    .content {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      border: 2px solid #dee2e6;
-    }
-  </style>
-</head>
-<body>
+    <header class="container-fluid bg-primary text-white p-5">
+      <h1>Tate's Favorite Sports & Athletes</h1>
+    </header>
 
- <div class="content">
-    <img src="C:\Users\knowj\CSC2053 HW1\resources\img\IMG_0011.WEBP">
-  </div>
+    <p>
+      My four favorite athletes are Dominik Szoboszlai, Jayson Tatum, Wilyer Abreu, and Christian Gonzalez.
+    </p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <main class="container mt-4">
+      <div id="photo-container">
+        <img
+          src="C:\Users\knowj\CSC2053 HW1\resources\img\IMG_0011.WEBP"
+          class="img-fluid rounded border border-3 border-dark"
+          width="300"
+        />
+      </div>
+    </main>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
-  <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">My Villanova Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarBasic">
-      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Sports.html">Sports</a>
-        </li>
-       
-      </ul>
+    <script src="C:\Users\knowj\CSC2053 HW1\resources\js\script.js"></script>
+    <script src="C:\Users\knowj\CSC2053 HW1\resources\js\navbar.js"></script>
     
-    </div>
-  </div>
-</nav>
-
-
- </body>
+    <script>
+      loadNavbar();
+    </script>
+  </body>
 </html>
