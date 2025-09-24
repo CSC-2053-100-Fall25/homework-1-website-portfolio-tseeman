@@ -42,8 +42,8 @@ function loadNavbar() {
   ul.className = 'navbar-nav me-auto mb-2 mb-xl-0';
 
   const navItems = [
-    { text: 'Home', href: 'index.html' },
-    { text: 'Sports', href: 'Sports.html' }
+    { text: 'Home', href: '../views/index.html' },
+    { text: 'Sports', href: '../views/Sports.html' }
   ];
 
   navItems.forEach(item => {
